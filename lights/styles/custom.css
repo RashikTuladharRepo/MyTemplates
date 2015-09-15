@@ -1,0 +1,353 @@
+/*--------------------------------------------Rashik Default Styles-----------------------------------------------------*/
+
+@font-face {font-family: segeo;src: url("../fonts/segeo.ttf");}
+*{font-family: segeo;margin: 0 auto;}
+
+/*Font Sizes*/
+.font16{font-size: 16px !important;;}
+.font14{font-size: 14px !important;;}
+.font18{font-size: 18px !important;}
+
+/*Font Family*/
+.fontsans{font-family: sans-serif !important;}
+.fontsegeo{font-family: segeo !important;}
+
+/*Social Networks*/
+.social {margin-top: 20px;}
+.social-icon{width: 40px;height: 40px;background: #DDD;font-size: 20px;text-align: center;padding: 10px;color: #5e5e5e;}
+/*.facebook-hover,.google-hover,.twitter-hover{-webkit-transition: background 1s,color 1s;-moz-transition: background 1s,color 1s;-ms-transition: background 1s,color 1s;-o-transition: background 1s,color 1s;transition: background 1s,color 1s;}*/
+.facebook-hover:hover{background: #46629E;color: #FFF;cursor: pointer;}
+.google-hover:hover{background: #EA4436;color: #FFF;cursor: pointer;}
+.twitter-hover:hover{background: #0FB1F2;color: #FFF;cursor: pointer;}
+
+/*back to top*/
+.back-to-top{width: 50px;height: 50px;background-color: #CCCCCC;position: fixed;bottom: 20px;right: 20px;z-index: 1000;display: block;font-size: 40px;font-weight: 100;text-align: center;}
+
+
+
+
+/*-----------------------------------------------------------Animation Blocks-------------------------------------------------------------------------*/
+
+@-webkit-keyframes read-more {
+    from   {margin-right: 10px;}
+    to {margin-right:0px; }
+}
+
+/* Standard syntax */
+@keyframes read-more {
+    from   {margin-right: 10px;}
+    to {margin-right:0px; }
+}
+
+
+
+@-webkit-keyframes offers {
+    from   {margin-top: 10px;}
+    to {margin-top:0px; }
+}
+
+/* Standard syntax */
+@keyframes offers {
+    from   {margin-top: 10px;}
+    to {margin-top:0px; }
+}
+
+/*-----------------------------------------------------------Animation Block Ends-------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*-----------------------------------------------------Header-----------------------------------------------------------*/
+
+
+/*search bar*/
+.header
+{
+
+}
+
+.header .header-search-bar
+{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header .header-search-bar .logo-holder
+{
+    width: 200px;
+    height: 80px;
+}
+
+.header .header-search-bar .contact-info
+{
+    color:grey;
+    font-size: 14px;
+    padding: 20px;
+    text-align: right;
+}
+/*search bar*/
+
+
+/*navigation*/
+.header .navbar.navbar-default.navbar-static-top
+{
+    height: 70px;
+    margin-bottom: 0px;
+}
+
+.header .navbar.navbar-default .navbar-header .navbar-brand{
+    line-height: 40px;
+    height: 70px;
+    width: 150px;
+    background-repeat: no-repeat;
+}
+
+.header .navbar.navbar-default .navbar-nav li a
+{
+    line-height: 40px;
+    height: 70px;
+    font-size: 16px;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -ms-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s;
+}
+
+.header .navbar.navbar-default .nav.navbar-nav li.active a{
+    background: #1E90FF;
+    color:#FFF;
+}
+
+.header .navbar.navbar-default .nav.navbar-nav li a:hover{
+    background: #1E90FF;
+    color:#FFF;
+}
+
+.header .navbar.navbar-default .navbar-header .navbar-toggle
+{
+    top: 10px;
+}
+
+/*navigation*/
+
+
+/*-----------------------------------------------------Slider-----------------------------------------------------------*/
+
+.slider {
+    height: 500px;
+    background-image: url('../images/slider.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    /*margin-bottom: 10px;*/
+    position: relative;
+}
+
+.slider .slider-contents {
+    font-size: 2em;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    top: 200px;
+    color: #FFF;
+}
+
+.slider .slider-contents a
+{
+    margin-top: 10px;
+}
+
+
+
+
+/*-----------------------------------------------------products and offers----------------------------------------------*/
+
+.product-offers
+{
+    padding-top: 50px;
+}
+
+.product-offers .products,.product-offers .offers-discounts
+{
+    height: auto;
+}
+
+.product-offers .products .products-list,.product-offers .offers-discounts .offers-list
+{
+    padding: 10px;
+}
+
+.product-offers .products .products-list img, .product-offers .offers-discounts .offers-list img
+{
+    width: 100%;
+}
+
+
+
+
+
+/*-----------------------------------------------------New Products-----------------------------------------------------*/
+
+
+.new-products {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.list-item {
+    overflow: hidden;
+    margin: 0 15px;
+}
+
+.list-item .list-thumb {
+    overflow: hidden;
+}
+
+.list-item .list-thumb .title {
+    background-color: #3381C1;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    height: 50px;
+    text-align: center;
+}
+
+.list-item .list-thumb .title h4 {
+    color: #fff;
+    line-height: 50px;
+}
+
+.list-item .list-thumb img {
+    width: 100%;
+}
+
+.list-content
+{
+    width: 100%;
+    height: 155px;
+    background-color: #F4F4F4;
+    padding: 10px;
+}
+
+.list-item .list-content h5 {
+    color: #3381C1;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0px 0 5px 0;
+}
+
+.list-item .list-content span {
+    text-align: justify;
+    font-weight: 300;
+    margin: 0 0 15px 0;
+    font-size: 16px;
+}
+
+.list-item .list-content a
+{
+    float: right;
+    animation-name: read-more;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+
+.list-item .list-content a.price-btn {
+    display: block;
+    background-color: #9ed034;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.list-item .list-content a.price-btn:hover {
+    background-color: #90be2c;
+}
+
+.owl-next,.owl-prev {
+    display: none;
+}
+
+
+
+
+/*-----------------------------------------------------Footer-----------------------------------------------------------*/
+
+.footer-intro
+{
+    min-height: 100px;
+    background-color: #2098d1;
+    margin-top: 50px;
+}
+
+.footer-intro h3
+{
+    line-height: 60px;
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.footer-intro .footer-intro-contents
+{
+    min-height: 100px;
+    text-align: center;
+    display: block;
+}
+
+.footer-intro .footer-intro-contents:hover
+{
+    background:#286090;
+    cursor: pointer;
+}
+
+
+.footer
+{
+    background: #F6F6F6;
+    padding-top: 50px;
+}
+
+.footer .footer-block-title
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.footer .footer-block-content ul,.footer .footer-block-content .social,.footer .footer-block-content form
+{
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.footer .footer-block-content ul li
+{
+    font-family: sans-serif !important;
+    padding: 5px;
+    color:#333;
+}
+
+.footer .footer-block-content ul li p
+{
+    font-family: sans-serif !important;
+    display: inline-block;
+    color:grey;
+}
+
+
+footer
+{
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
