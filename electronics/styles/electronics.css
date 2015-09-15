@@ -1,0 +1,442 @@
+/*-----------------------------------------------------------Basic Setting-------------------------------------------------------------------------*/
+
+@font-face
+{
+    font-family: segeo;
+    src: url("../fonts/segeo.ttf");
+}
+*
+{
+    font-family: segeo;
+    margin: 0 auto;
+}
+/*Font Sizes*/
+
+.font16
+{
+    font-size: 16px;
+}
+.font14
+{
+    font-size: 14px;
+}
+.font18
+{
+    font-size: 18px;
+}
+
+/*Pre Loader*/
+#cover
+{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    z-index: 9999;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+}
+#cover img
+{
+    top: 0;
+}
+/*Social Icons*/
+
+.social
+{
+    margin-top: 20px;
+}
+.social-icon
+{
+    width: 40px;
+    height: 40px;
+    background: #DDD;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #5e5e5e;
+}
+.facebook-hover,
+.google-hover,
+.twitter-hover
+{
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -ms-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s;
+}
+.facebook-hover:hover
+{
+    background: #46629E;
+    color: #FFF;
+    cursor: pointer;
+}
+.google-hover:hover
+{
+    background: #EA4436;
+    color: #FFF;
+    cursor: pointer;
+}
+.twitter-hover:hover
+{
+    background: #0FB1F2;
+    color: #FFF;
+    cursor: pointer;
+}
+/*Back To Top*/
+
+.back-to-top
+{
+    width: 50px;
+    height: 50px;
+    background-color: #CCCCCC;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: block;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------Basic Setting Ends-------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------Animation Blocks-------------------------------------------------------------------------*/
+
+@-webkit-keyframes read-more {
+    from   {margin-right: 10px;}
+    to {margin-right:0px; }
+}
+
+/* Standard syntax */
+@keyframes read-more {
+    from   {margin-right: 10px;}
+    to {margin-right:0px; }
+}
+
+
+
+@-webkit-keyframes offers {
+    from   {margin-top: 10px;}
+    to {margin-top:0px; }
+}
+
+/* Standard syntax */
+@keyframes offers {
+    from   {margin-top: 10px;}
+    to {margin-top:0px; }
+}
+
+/*-----------------------------------------------------------Animation Block Ends-------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------Header-------------------------------------------------------------------------*/
+
+.header-contact-info
+{
+
+}
+
+.header-contact-info-contents
+{
+    padding: 10px;
+    color: #1E90FF;
+}
+
+.header-contact-info-contents span
+{
+    margin: 0px 10px 0px 10px;
+}
+
+.header .navbar.navbar-default.navbar-static-top{
+    margin-bottom: 0px;
+    height: 70px;
+    -webkit-box-shadow: -1px 6px 4px -4px rgba(196,188,196,1);
+    -moz-box-shadow: -1px 6px 4px -4px rgba(196,188,196,1);
+    box-shadow: -1px 6px 4px -4px rgba(196,188,196,1);
+}
+
+.header .navbar.navbar-default .navbar-header .navbar-brand{
+    line-height: 40px;
+    height: 70px;
+    width: 150px;
+    background-image:url('../images/logo.png');
+    background-repeat: no-repeat;
+}
+.header .navbar.navbar-default .nav.navbar-nav li a{
+    line-height: 40px;
+    font-size: 16px;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -ms-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s;
+}
+.header .navbar.navbar-default .nav.navbar-nav li.active a{
+    background: #1E90FF;
+    color:#FFF;
+}
+.header .navbar.navbar-default .nav.navbar-nav li a:hover{
+    background: #1E90FF;
+    color:#FFF;
+}
+
+/*-----------------------------------------------------------Header Ends-------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------Slider-------------------------------------------------------------------------*/
+
+.slider {
+    height: 500px;
+    background-image: url('http://images.apple.com/ca/macbook-air/images/overview_wireless_hero_enhanced.png');
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.slider .slider-contents {
+    font-size: 2em;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    top: 200px;
+}
+
+.slider .slider-contents a
+{
+    margin-top: 10px;
+}
+/*-----------------------------------------------------------Slider Ends-------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------Product And Offer-------------------------------------------------------------------------*/
+
+.products,.offers
+{
+    margin-bottom: 20px;
+}
+
+.products .products-list,.offers .offers-list
+{
+    margin-top:10px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.products .products-list img,.offers .offers-list img
+{
+    width: 100%;
+}
+
+.products .products-list:hover .products-list-description
+{
+    visibility: visible;
+    top: 10px;
+}
+
+.products .products-list .products-list-description,.offers .offers-list .offers-list-description
+{
+    position: absolute;
+    z-index: 1000;
+    margin-left: 20px;
+    top: 0px;
+    visibility: hidden;
+    transition:top 1s ease;
+}
+
+.offers .offers-list .offers-list-description
+{
+    position: absolute;
+    visibility: visible;
+    background-image: url('../images/promo-banner.png');
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: inherit;
+    margin-left: 0px;
+    width: 80px;
+    font-weight: bolder;
+    color: #FFF;
+    text-align: center;
+
+    animation-name: offers;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+
+
+.products .products-list .products-list-description a,.offers .offers-list .offers-list-description a
+{
+    font-size: 16px;
+}
+
+/*-----------------------------------------------------------Product And Offer Ends-------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------About-------------------------------------------------------------------------*/
+
+.index-about {
+    height: 500px;
+    margin-top: 50px;
+    background-image: url('http://images.apple.com/ca/macbook-air/images/overview_wireless_hero_enhanced.png');
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.index-about .index-about-contents {
+    text-align: center;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 20%;
+}
+
+/*-----------------------------------------------------------About Ends-------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------New Products-------------------------------------------------------------------------*/
+
+
+.new-products {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.list-item {
+    overflow: hidden;
+    margin: 0 15px;
+}
+
+.list-item .list-thumb {
+    overflow: hidden;
+}
+
+.list-item .list-thumb .title {
+    background-color: #9ed034;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    height: 50px;
+    text-align: center;
+}
+
+.list-item .list-thumb .title h4 {
+    color: #fff;
+    line-height: 50px;
+}
+
+.list-item .list-thumb img {
+    width: 100%;
+}
+
+.list-content
+{
+    width: 100%;
+    height: 155px;
+    background-color: #F4F4F4;
+    padding: 10px;
+}
+
+.list-item .list-content h5 {
+    color: #9ed034;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0px 0 5px 0;
+}
+
+.list-item .list-content span {
+    text-align: justify;
+    font-weight: 300;
+    margin: 0 0 15px 0;
+    font-size: 16px;
+}
+
+.list-item .list-content a
+{
+    float: right;
+    animation-name: read-more;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+
+.list-item .list-content a.price-btn {
+    display: block;
+    background-color: #9ed034;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.list-item .list-content a.price-btn:hover {
+    background-color: #90be2c;
+}
+
+.owl-next,.owl-prev {
+    display: none;
+}
+
+/*-----------------------------------------------------------New Product Ends-------------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------Footer-------------------------------------------------------------------------*/
+
+.footer
+{
+    background-color: #F4F4F4;
+    min-height: 250px;
+    margin-top: 10px;
+}
+
+.footer hr
+{
+    border-color: #333;
+    opacity: 0.3;
+    width: 900px;
+}
+
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-center ul li
+{
+    text-align: left;
+    list-style: none;
+}
+
+/*-----------------------------------------------------------Footer Ends-------------------------------------------------------------------------*/
